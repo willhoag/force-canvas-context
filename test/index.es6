@@ -1,7 +1,7 @@
 import tape from 'tape'
 import createCanvas from 'create-canvas'
 import forceCanvasContext from '../src/'
-import isContext from '../src/is-context'
+import isContext from 'is-canvas-context'
 
 let canvas = null
 

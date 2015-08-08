@@ -1,4 +1,4 @@
-import isContext from './is-context'
+import isContext from 'is-canvas-context'
 export default function forceCanvasContext (ctx, type='2d') {
 
   // convert canvas to ctx
