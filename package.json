@@ -46,9 +46,9 @@
     "url": "git://github.com/willhoag/force-canvas-context.git"
   },
   "scripts": {
-    "build:browser": "browserify -t babelify --standalone forceCanvasContext src/index.es6 --extension .es6 > index.js",
+    "build:browser": "browserify -t babelify --standalone forceCanvasContext src/index.es6 --extension .es6 > browser.js",
     "build:node": "babel src/index.es6 > index.js",
-    "build": "npm run build:node && run build:browser",
+    "build": "npm run build:node && npm run build:browser",
     "prepublish": "npm test && npm run build",
     "test": "standard src/index.es6 && browserify -t babelify --extension .es6 test/index.es6 | tape-run | tap-spec"
   }
