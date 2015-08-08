@@ -1,5 +1,5 @@
 import tape from 'tape'
-// import createCanvas from 'create-canvas'
+import createCanvas from 'create-canvas'
 import forceCanvasContext from '../src/'
 import isContext from '../src/is-context'
 
@@ -11,7 +11,7 @@ function test (description, fn) {
       t.end()
       canvas = null
     }
-    canvas = document.createElement('canvas')
+    canvas = createCanvas()
     fn(t)
   })
 }

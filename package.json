@@ -10,9 +10,7 @@
   "bugs": {
     "url": "https://github.com/willhoag/force-canvas-context/issues"
   },
-  "dependencies": {
-    "create-canvas": "^1.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babelify": "^6.1.3",
     "browserify": "^11.0.0",
