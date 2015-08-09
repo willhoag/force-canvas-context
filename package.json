@@ -11,7 +11,7 @@
     "url": "https://github.com/willhoag/force-canvas-context/issues"
   },
   "dependencies": {
-    "is-canvas-context": "^0.0.0"
+    "is-canvas-context": "^0.0.2"
   },
   "devDependencies": {
     "babel": "^5.8.21",
@@ -34,7 +34,6 @@
   ],
   "license": "ISC",
   "main": "index.js",
-  "browser": "browser.js",
   "maintainers": [
     {
       "name": "devhoag",
@@ -46,9 +45,7 @@
     "url": "git://github.com/willhoag/force-canvas-context.git"
   },
   "scripts": {
-    "build:browser": "browserify -t babelify --standalone forceCanvasContext src/index.es6 --extension .es6 > browser.js",
-    "build:node": "babel src/index.es6 > index.js",
-    "build": "npm run build:node && npm run build:browser",
+    "build": "babel src/index.es6 > index.js",
     "prepublish": "npm test && npm run build",
     "test": "standard src/index.es6 && browserify -t babelify --extension .es6 test/index.es6 | tape-run | tap-spec"
   }
