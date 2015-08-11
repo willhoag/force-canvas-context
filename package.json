@@ -1,7 +1,7 @@
 {
   "name": "force-canvas-context",
   "description": "sanity check to get the context if input happens to be the canvas; errors if it can't return a context",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": {
     "name": "Will Hoag",
     "email": "dev@willhoag.com",
@@ -11,7 +11,7 @@
     "url": "https://github.com/willhoag/force-canvas-context/issues"
   },
   "dependencies": {
-    "is-canvas-context": "^0.0.2"
+    "is-canvas-context": "~0.0.2"
   },
   "devDependencies": {
     "babel": "^5.8.21",
